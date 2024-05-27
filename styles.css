@@ -131,12 +131,20 @@ header {
   .dropdown_menu.open {
     display: block;
   }
+
+  .navbar{
+    height: 80px;
+  }
 }
 
 @media (max-width: 576px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
+  }
+
+  .navbar{
+    height: 80px;
   }
 }
 
