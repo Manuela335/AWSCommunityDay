@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #232f3e;
+}
+
+header {
+  position: relative;
+}
+
+.navbar {
+  background-color: #ff9900;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem; /* Añadimos padding aquí para crear espacio alrededor */
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+/*DROPDOWN MENU*/
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 1rem; /* Ajustamos el right para mantener el padding */
+  top: 60px;
+  width: 300px;
+  background: #232f3e;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.dropdown_menu.open {
+  display: block;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action_btn2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*BAR RESPONSIVE*/
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn2 {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: none; /* Aseguramos que esté oculto por defecto */
+  }
+
+  .dropdown_menu.open {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+
+
+
+
