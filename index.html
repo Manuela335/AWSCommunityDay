@@ -1,60 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>AWS Community Day</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
-    <link rel="shortcut icon" href="assets/aws-cloud-club-logo.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />.<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>AWS Student Community Day CO</title>
+  <link rel="stylesheet" href="./perLoader.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Inter&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet" />
 </head>
-<body>
-    <div class="perLoader">
-        <div class="loader"></div>
-    </div>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">Community Day CO</a></div>
-            <ul class="links">
-                <li><a href="#heading">Home</a></li>
-                <li><a href="#about-us">About</a></li>
-                <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#venue">Venue</a></li>
-            </ul> 
-            <a href="#" class="action_btn">Get Started</a>
-            <div class="toggle_btn">
-                <i class="fa-sharp fa-solid fa-bars"></i>
-            </div>
 
-            <div class="dropdown_menu">
-                <li><a href="#heading">Home</a></li>
-                <li><a href="#about-us">About</a></li>
-                <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#venue">Venue</a></li>
-                <li><a href="#" class="action_btn2">Get Started</a></li>
-            </div>
+<body class="loading">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <header>
+    <div class="navbar">
+        <div class="logo"><a href="#">Community Day CO</a></div>
+        <ul class="links">
+            <li><a href="#heading">Inicio</a></li>
+            <li><a href="#about-us">Acerca</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#team">Organizadores</a></li>
+            <li><a href="#location">Ubicación</a></li>
+            <li><a href="#venue">Venue</a></li>
+        </ul> 
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
         </div>
-    </header>
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn');
-        const toggleBtnIcon = document.querySelector('.toggle_btn i');
-        const dropDownMenu = document.querySelector('.dropdown_menu');
 
-        toggleBtn.onclick = function(){
-            dropDownMenu.classList.toggle('open');
-            const isOpen = dropDownMenu.classList.contains('open');
+        <div class="dropdown_menu">
+            <li><a href="#heading">Inicio</a></li>
+            <li><a href="#about-us">Acerca</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#team">Organizadores</a></li>
+            <li><a href="#location">Ubicación</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#" class="action_btn2">Get Started</a></li>
+        </div>
+    </div>
+</header>
 
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-sharp fa-solid fa-xmark'
-                : 'fa-sharp fa-solid fa-bars';
-        }
-    </script>
+    <main>
+      <section id="heading" class="heading-section">
+        <div class="heading-content">
+          <img src="./assets/bg-images/awsAnimated.gif" alt="" />
+          <div style="margin-bottom: 80px;" class="sub-part">
+            <img id="heading-content-logo" src="./assets/img/round_logo_dark_backgrounds.png" alt="" />
+          </div>
+            <i class="far fa-calendar-alt" style="color: rgb(255 207 0)"></i>
+            <span class="heading-content-date">24 Agosto 2024</span>
+            <i class="fas fa-map-marker-alt" style="color: rgb(255 207 0)"></i>Bogotá, Colombia
+          </p>
+
+          <button>
+            <a href="https://www.eventbrite.com/e/aws-community-day-colombia-tickets-878516896687">Regístrate Aquí</a>
+          </button>
+        </div>
+      </section>
+      <section id="countdown" class="countdown-section">
+        <div class="countdown-content">
+          <h2>Comienza en...</h2>
+          <div id="countdown-timer">
+            <div id="countdown-clock">
+              <li><span class="big-number" id="days"></span><br />días</li>
+              <p>:</p>
+              <li><span class="big-number" id="hours"></span><br />horas</li>
+              <p>:</p>
+              <li>
+                <span class="big-number" id="minutes"></span><br />minutos
+              </li>
+              <p>:</p>
+              <li>
+                <span class="big-number" id="seconds"></span> <br />segundos
+              </li>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="stats-content">
+          <li><span class="big-number">250+</span> <br />attendees</li>
+          <li><span class="big-number">9</span> <br />talks</li>
+          <li><span class="big-number">2 </span> <br />Activities</li>
+          <li><span class="big-number">10+ </span> <br />professionals</li>
+        </div>
+
+        <div class="cloud">
+          <div class="wheels">
+            <img class="wheel1" src="./assets/bg-images/wheel.jpg" alt="Wheel" />
+            <img class="wheel2" src="./assets/bg-images/wheel.jpg" alt="Wheel" />
+          </div>
+          <img class="aws" src="./assets/bg-images/car.png" alt="Cloud" />
+        </div>
+      </section>
+
+      <section id="about-us" class="about-us-section">
+        <div class="about-us-content">
+          <h2>Acerca del AWS Community Day Colombia</h2>
+          <p>
+            AWS Community Day es un evento organizado por grupos de usuarios de AWS
+            (AWS User Groups) en diversas ciudades de COLOMBIA, con el apoyo de AWS.
+            Ofrecen una plataforma para que los miembros de la comunidad compartan
+            su conocimiento y pasión por AWS, promoviendo el aprendizaje continuo y
+            el desarrollo profesional en el ámbito de la computación en la nube.
+            que reúne a la comunidad de desarrolladores, ingenieros, arquitectos y
+            profesionales de tecnología interesados en aprender, compartir conocimientos y
+            experiencias sobre la plataforma AWS. Este evento proporciona una oportunidad
+            para que los miembros de la comunidad se conecten, participen en sesiones de charlas,
+            talleres prácticos, demos y networking.
+          </p>
+        </div>
+      </section>
+
+      <section id="why-join" class="join-us-section">
+        <h2>Why Join Us?</h2>
+        <div class="join-us-content">
+          <div class="reason-card">
+            <h3>🎤 Charlas Técnicas</h3>
+            <p>
+              ¡Sumérjete en charlas esclarecedoras impartidas por expertos
+              certificados de la industria y amplía tus conocimientos sobre la nube! 🗣🔍
+            </p>
+          </div>
+
+          <div class="reason-card">
+            <h3>🤝 Networking</h3>
+            <p>
+              ¡Conéctate con una tribu de personas con ideas afines y forja vínculos que durarán toda la vida! 🌐👥
+            </p>
+          </div>
+
+          <div class="reason-card">
+            <h3>🎁 Liga de Builder cards</h3>
+            <p>
+              Lo más nuevo de nuestro evento!!! 🎁🤩
+            </p>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+      <section id="sponsors" class="sponsors-section">
+        <div class="sub-part">
+          <h2 class="sub-heading">Platinum</h2>
+          <img src="./assets/Sponsors/aws-logo.png" alt="" />
+        </div>
+        <div class="sub-part">
+          <h2 class="sub-heading">Gold</h2>
+          <img  src="./assets/Sponsors/aws-logo.png" alt="" />
+        </div>
+        <div class="sub-part">
+          <h2 class="sub-heading">Silver</h2>
+          <img  src="./assets/Sponsors/aws-logo.png" alt="" />
+        </div>
+        <div class="sub-part">
+          <h2 class="sub-heading">Bronze</h2>
+          <img  src="./assets/Sponsors/aws-logo.png" alt="" />
+        </div>
+      </section>
+
+      <section id="team"></section>
+
+      <section id="venue" class="venue-section">
+        <h2 class="sub-heading">Ubicación</h2>
+        <div class="venue-content">
+          <div class="venue-details">
+            <h2>Universidad Externado, Bloque H</h2>
+            <h4>
+              Bogotá, Colombia
+            </h4>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.072252076012!2d-74.0675069048012!3d4.596084109015222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9903411fc179%3A0x6b97cdfb44619386!2sUniversidad%20Externado%2C%20Bloque%20H!5e0!3m2!1sen!2sco!4v1717643514113!5m2!1sen!2sco"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="faqs">
+        <div class="faq-container">
+          <h2 style="text-align: center;">Preguntas Frecuentes</h2>
+
+          <div class="faq">
+            <div class="question">P: Qué es el AWS Community Day?</div>
+            <div class="answer">
+              <p>Es el evento más esperado del año</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">P: Pregunta?</div>
+            <div class="answer">
+              <p>Respuesta</p>
+            </div>
+          </div>
+
+        <script>
+          const faqs = document.querySelectorAll(".faq");
+
+          faqs.forEach(faq => {
+            faq.addEventListener('click', () => {
+              faq.classList.toggle("active");
+            });
+          });
+        </script>
+      </section>
+    </main>
+
+    <div class="footer">
+      <p>
+        &copy; 2024 AWS User groups Colombia. <br />
+        Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+  <script src="countdown.js"></script>
+  <script src="./preloader.js"></script>
+
+  <script>
+    const sponsorLogos = document.querySelectorAll(".sponsor-logo");
+    const sponsorCount = sponsorLogos.length;
+    document.documentElement.style.setProperty(
+      "--sponsor-count",
+      sponsorCount
+    );
+    document
+      .querySelector(".sponsor-bar")
+      .appendChild(sponsorLogos[0].cloneNode(true));
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNX3BXYLTF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KNX3BXYLTF");
+  </script>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-sharp fa-solid fa-xmark'
+            : 'fa-sharp fa-solid fa-bars';
+    }
+  </script>
 </body>
+
 </html>
